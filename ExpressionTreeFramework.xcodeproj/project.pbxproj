@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A02597A1165E3180065218A /* OperatorNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0259781165E3180065218A /* OperatorNode.m */; };
+		1A0259821165E45C0065218A /* EqualityOperatorNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A0259801165E45C0065218A /* EqualityOperatorNode.h */; };
+		1A0259831165E45C0065218A /* EqualityOperatorNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0259811165E45C0065218A /* EqualityOperatorNode.m */; };
+		1A02599A1165E9120065218A /* ObjectComparer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A0259981165E9120065218A /* ObjectComparer.h */; };
+		1A02599B1165E9120065218A /* ObjectComparer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0259991165E9120065218A /* ObjectComparer.m */; };
+		1A0259A31165EAFE0065218A /* OpenBracketNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A0259A11165EAFE0065218A /* OpenBracketNode.h */; };
+		1A0259A41165EAFE0065218A /* OpenBracketNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0259A21165EAFE0065218A /* OpenBracketNode.m */; };
+		1A0259A71165EB300065218A /* CloseBracketNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A0259A51165EB300065218A /* CloseBracketNode.h */; };
+		1A0259A81165EB300065218A /* CloseBracketNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0259A61165EB300065218A /* CloseBracketNode.m */; };
+		1A0259AB1165EB4C0065218A /* ParameterSeperatorNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A0259A91165EB4C0065218A /* ParameterSeperatorNode.h */; };
+		1A0259AC1165EB4C0065218A /* ParameterSeperatorNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0259AA1165EB4C0065218A /* ParameterSeperatorNode.m */; };
+		1A025C4E116634210065218A /* Stack.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A025C4C116634210065218A /* Stack.h */; };
+		1A025C4F116634210065218A /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A025C4D116634210065218A /* Stack.m */; };
+		1A025C6111663A550065218A /* FunctionNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A025C5F11663A550065218A /* FunctionNode.m */; };
+		1A025C94116642650065218A /* AdditionOperatorNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A025C92116642650065218A /* AdditionOperatorNode.h */; };
+		1A025C95116642650065218A /* AdditionOperatorNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A025C93116642650065218A /* AdditionOperatorNode.m */; };
+		1A025C98116643560065218A /* ObjectArithmetic.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A025C96116643560065218A /* ObjectArithmetic.h */; };
+		1A025C99116643560065218A /* ObjectArithmetic.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A025C97116643560065218A /* ObjectArithmetic.m */; };
+		1A025C9C116646C50065218A /* OperatorNodeFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A025C9A116646C50065218A /* OperatorNodeFactory.h */; };
+		1A025C9D116646C50065218A /* OperatorNodeFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A025C9B116646C50065218A /* OperatorNodeFactory.m */; };
+		1A025CA0116648970065218A /* OperatorNodePair.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A025C9E116648970065218A /* OperatorNodePair.h */; };
+		1A025CA1116648970065218A /* OperatorNodePair.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A025C9F116648970065218A /* OperatorNodePair.m */; };
+		1A025D561166532A0065218A /* FunctionNodeFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A025D541166532A0065218A /* FunctionNodeFactory.h */; };
+		1A025D571166532A0065218A /* FunctionNodeFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A025D551166532A0065218A /* FunctionNodeFactory.m */; };
+		1A5212061164A87C004B6D90 /* ExpressionNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5212041164A87C004B6D90 /* ExpressionNode.m */; };
+		1A5212141164A9B5004B6D90 /* ValueNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A5212121164A9B5004B6D90 /* ValueNode.h */; };
+		1A5212151164A9B5004B6D90 /* ValueNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5212131164A9B5004B6D90 /* ValueNode.m */; };
+		1A5212181164AAF1004B6D90 /* VariableNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A5212161164AAF1004B6D90 /* VariableNode.h */; };
+		1A5212191164AAF1004B6D90 /* VariableNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5212171164AAF1004B6D90 /* VariableNode.m */; };
+		1A52121C1164AB1C004B6D90 /* IntegerNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A52121A1164AB1C004B6D90 /* IntegerNode.h */; };
+		1A52121D1164AB1C004B6D90 /* IntegerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A52121B1164AB1C004B6D90 /* IntegerNode.m */; };
+		1A5212201164AB32004B6D90 /* DoubleNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A52121E1164AB32004B6D90 /* DoubleNode.h */; };
+		1A5212211164AB32004B6D90 /* DoubleNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A52121F1164AB32004B6D90 /* DoubleNode.m */; };
+		1A5212241164AB4B004B6D90 /* BooleanNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A5212221164AB4B004B6D90 /* BooleanNode.h */; };
+		1A5212251164AB4B004B6D90 /* BooleanNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5212231164AB4B004B6D90 /* BooleanNode.m */; };
+		1A52125D11652784004B6D90 /* IntegrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A52125C11652784004B6D90 /* IntegrationTests.m */; };
+		1ACC2E2D1165DBF200942FA8 /* ExpressionFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ACC2E2B1165DBF200942FA8 /* ExpressionFactory.m */; };
+		1AF28A2F116735DE0079E00E /* ExpressionTreeFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AF28A2E116735DE0079E00E /* ExpressionTreeFramework.h */; };
+		1AF28A54116736DB0079E00E /* ExpressionFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AF28A52116736DB0079E00E /* ExpressionFactory.h */; };
+		1AF28A55116736DB0079E00E /* ExpressionNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AF28A53116736DB0079E00E /* ExpressionNode.h */; };
+		1AF28AA4116738150079E00E /* MultiplicationOperatorNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AF28AA2116738150079E00E /* MultiplicationOperatorNode.h */; };
+		1AF28AA5116738150079E00E /* MultiplicationOperatorNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF28AA3116738150079E00E /* MultiplicationOperatorNode.m */; };
+		1AF28ACF116739E90079E00E /* DivisionOperatorNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AF28ACD116739E90079E00E /* DivisionOperatorNode.h */; };
+		1AF28AD0116739E90079E00E /* DivisionOperatorNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF28ACE116739E90079E00E /* DivisionOperatorNode.m */; };
+		1AF28AD511673AF80079E00E /* SubtractionOperatorNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AF28AD311673AF80079E00E /* SubtractionOperatorNode.h */; };
+		1AF28AD611673AF80079E00E /* SubtractionOperatorNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF28AD411673AF80079E00E /* SubtractionOperatorNode.m */; };
+		1AF28C4A1167797A0079E00E /* MinFunctionNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AF28C481167797A0079E00E /* MinFunctionNode.h */; };
+		1AF28C4B1167797A0079E00E /* MinFunctionNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF28C491167797A0079E00E /* MinFunctionNode.m */; };
+		1AF28D8E116797F50079E00E /* FunctionNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AF28D8C116797F50079E00E /* FunctionNode.h */; };
+		1AF28D8F116797F50079E00E /* OperatorNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AF28D8D116797F50079E00E /* OperatorNode.h */; };
+		1AF28D98116798980079E00E /* MaxFunctionNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AF28D96116798980079E00E /* MaxFunctionNode.h */; };
+		1AF28D99116798980079E00E /* MaxFunctionNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF28D97116798980079E00E /* MaxFunctionNode.m */; };
+		AA747D9F0F9514B9006C5449 /* ExpressionTreeFramework_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* ExpressionTreeFramework_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1A0259781165E3180065218A /* OperatorNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperatorNode.m; sourceTree = "<group>"; };
+		1A0259801165E45C0065218A /* EqualityOperatorNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EqualityOperatorNode.h; sourceTree = "<group>"; };
+		1A0259811165E45C0065218A /* EqualityOperatorNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EqualityOperatorNode.m; sourceTree = "<group>"; };
+		1A0259981165E9120065218A /* ObjectComparer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectComparer.h; sourceTree = "<group>"; };
+		1A0259991165E9120065218A /* ObjectComparer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectComparer.m; sourceTree = "<group>"; };
+		1A0259A11165EAFE0065218A /* OpenBracketNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenBracketNode.h; sourceTree = "<group>"; };
+		1A0259A21165EAFE0065218A /* OpenBracketNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenBracketNode.m; sourceTree = "<group>"; };
+		1A0259A51165EB300065218A /* CloseBracketNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloseBracketNode.h; sourceTree = "<group>"; };
+		1A0259A61165EB300065218A /* CloseBracketNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CloseBracketNode.m; sourceTree = "<group>"; };
+		1A0259A91165EB4C0065218A /* ParameterSeperatorNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParameterSeperatorNode.h; sourceTree = "<group>"; };
+		1A0259AA1165EB4C0065218A /* ParameterSeperatorNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParameterSeperatorNode.m; sourceTree = "<group>"; };
+		1A025C4C116634210065218A /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		1A025C4D116634210065218A /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
+		1A025C5F11663A550065218A /* FunctionNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionNode.m; sourceTree = "<group>"; };
+		1A025C92116642650065218A /* AdditionOperatorNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdditionOperatorNode.h; sourceTree = "<group>"; };
+		1A025C93116642650065218A /* AdditionOperatorNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdditionOperatorNode.m; sourceTree = "<group>"; };
+		1A025C96116643560065218A /* ObjectArithmetic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectArithmetic.h; sourceTree = "<group>"; };
+		1A025C97116643560065218A /* ObjectArithmetic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectArithmetic.m; sourceTree = "<group>"; };
+		1A025C9A116646C50065218A /* OperatorNodeFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperatorNodeFactory.h; sourceTree = "<group>"; };
+		1A025C9B116646C50065218A /* OperatorNodeFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperatorNodeFactory.m; sourceTree = "<group>"; };
+		1A025C9E116648970065218A /* OperatorNodePair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperatorNodePair.h; sourceTree = "<group>"; };
+		1A025C9F116648970065218A /* OperatorNodePair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperatorNodePair.m; sourceTree = "<group>"; };
+		1A025D541166532A0065218A /* FunctionNodeFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunctionNodeFactory.h; sourceTree = "<group>"; };
+		1A025D551166532A0065218A /* FunctionNodeFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionNodeFactory.m; sourceTree = "<group>"; };
+		1A5212041164A87C004B6D90 /* ExpressionNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpressionNode.m; sourceTree = "<group>"; };
+		1A5212121164A9B5004B6D90 /* ValueNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValueNode.h; sourceTree = "<group>"; };
+		1A5212131164A9B5004B6D90 /* ValueNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValueNode.m; sourceTree = "<group>"; };
+		1A5212161164AAF1004B6D90 /* VariableNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VariableNode.h; sourceTree = "<group>"; };
+		1A5212171164AAF1004B6D90 /* VariableNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VariableNode.m; sourceTree = "<group>"; };
+		1A52121A1164AB1C004B6D90 /* IntegerNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntegerNode.h; sourceTree = "<group>"; };
+		1A52121B1164AB1C004B6D90 /* IntegerNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntegerNode.m; sourceTree = "<group>"; };
+		1A52121E1164AB32004B6D90 /* DoubleNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubleNode.h; sourceTree = "<group>"; };
+		1A52121F1164AB32004B6D90 /* DoubleNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoubleNode.m; sourceTree = "<group>"; };
+		1A5212221164AB4B004B6D90 /* BooleanNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BooleanNode.h; sourceTree = "<group>"; };
+		1A5212231164AB4B004B6D90 /* BooleanNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BooleanNode.m; sourceTree = "<group>"; };
+		1A52124E116526CA004B6D90 /* ExpressionTreeFrameworkTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpressionTreeFrameworkTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A52124F116526CA004B6D90 /* ExpressionTreeFrameworkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExpressionTreeFrameworkTests-Info.plist"; sourceTree = "<group>"; };
+		1A52125B11652784004B6D90 /* IntegrationTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IntegrationTests.h; path = Tests/IntegrationTests.h; sourceTree = "<group>"; };
+		1A52125C11652784004B6D90 /* IntegrationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IntegrationTests.m; path = Tests/IntegrationTests.m; sourceTree = "<group>"; };
+		1ACC2E2B1165DBF200942FA8 /* ExpressionFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpressionFactory.m; sourceTree = "<group>"; };
+		1AF28A2E116735DE0079E00E /* ExpressionTreeFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExpressionTreeFramework.h; path = Include/ExpressionTreeFramework.h; sourceTree = "<group>"; };
+		1AF28A52116736DB0079E00E /* ExpressionFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExpressionFactory.h; path = Include/ExpressionFactory.h; sourceTree = "<group>"; };
+		1AF28A53116736DB0079E00E /* ExpressionNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExpressionNode.h; path = Include/ExpressionNode.h; sourceTree = "<group>"; };
+		1AF28AA2116738150079E00E /* MultiplicationOperatorNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiplicationOperatorNode.h; sourceTree = "<group>"; };
+		1AF28AA3116738150079E00E /* MultiplicationOperatorNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiplicationOperatorNode.m; sourceTree = "<group>"; };
+		1AF28ACD116739E90079E00E /* DivisionOperatorNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DivisionOperatorNode.h; sourceTree = "<group>"; };
+		1AF28ACE116739E90079E00E /* DivisionOperatorNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DivisionOperatorNode.m; sourceTree = "<group>"; };
+		1AF28AD311673AF80079E00E /* SubtractionOperatorNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubtractionOperatorNode.h; sourceTree = "<group>"; };
+		1AF28AD411673AF80079E00E /* SubtractionOperatorNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubtractionOperatorNode.m; sourceTree = "<group>"; };
+		1AF28C481167797A0079E00E /* MinFunctionNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinFunctionNode.h; sourceTree = "<group>"; };
+		1AF28C491167797A0079E00E /* MinFunctionNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinFunctionNode.m; sourceTree = "<group>"; };
+		1AF28D8C116797F50079E00E /* FunctionNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FunctionNode.h; path = Include/FunctionNode.h; sourceTree = "<group>"; };
+		1AF28D8D116797F50079E00E /* OperatorNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OperatorNode.h; path = Include/OperatorNode.h; sourceTree = "<group>"; };
+		1AF28D96116798980079E00E /* MaxFunctionNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaxFunctionNode.h; sourceTree = "<group>"; };
+		1AF28D97116798980079E00E /* MaxFunctionNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaxFunctionNode.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* ExpressionTreeFramework_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpressionTreeFramework_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libExpressionTreeFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libExpressionTreeFramework.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A52124B116526CA004B6D90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libExpressionTreeFramework.a */,
+				1A52124E116526CA004B6D90 /* ExpressionTreeFrameworkTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* ExpressionTreeFramework */ = {
+			isa = PBXGroup;
+			children = (
+				1AF28A2C116735CB0079E00E /* Include */,
+				1A52125711652712004B6D90 /* Tests */,
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+				1A52124F116526CA004B6D90 /* ExpressionTreeFrameworkTests-Info.plist */,
+			);
+			name = ExpressionTreeFramework;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1A025C5D11663A360065218A /* Function Nodes */,
+				1A0259A01165EAEF0065218A /* Internal Nodes */,
+				1A0259761165E30C0065218A /* Operator Nodes */,
+				1A5212091164A983004B6D90 /* Value Nodes */,
+				1A5212041164A87C004B6D90 /* ExpressionNode.m */,
+				1ACC2E2B1165DBF200942FA8 /* ExpressionFactory.m */,
+				1A025C4C116634210065218A /* Stack.h */,
+				1A025C4D116634210065218A /* Stack.m */,
+				1A0259981165E9120065218A /* ObjectComparer.h */,
+				1A0259991165E9120065218A /* ObjectComparer.m */,
+				1A025C96116643560065218A /* ObjectArithmetic.h */,
+				1A025C97116643560065218A /* ObjectArithmetic.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1A0259761165E30C0065218A /* Operator Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				1A025C91116642570065218A /* Arithmetical Nodes */,
+				1A02597F1165E44D0065218A /* Logical  Nodes */,
+				1A025C9A116646C50065218A /* OperatorNodeFactory.h */,
+				1A025C9B116646C50065218A /* OperatorNodeFactory.m */,
+				1A0259781165E3180065218A /* OperatorNode.m */,
+				1A025C9E116648970065218A /* OperatorNodePair.h */,
+				1A025C9F116648970065218A /* OperatorNodePair.m */,
+			);
+			name = "Operator Nodes";
+			sourceTree = "<group>";
+		};
+		1A02597F1165E44D0065218A /* Logical  Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				1A0259801165E45C0065218A /* EqualityOperatorNode.h */,
+				1A0259811165E45C0065218A /* EqualityOperatorNode.m */,
+			);
+			name = "Logical  Nodes";
+			sourceTree = "<group>";
+		};
+		1A0259A01165EAEF0065218A /* Internal Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				1A0259A11165EAFE0065218A /* OpenBracketNode.h */,
+				1A0259A21165EAFE0065218A /* OpenBracketNode.m */,
+				1A0259A51165EB300065218A /* CloseBracketNode.h */,
+				1A0259A61165EB300065218A /* CloseBracketNode.m */,
+				1A0259A91165EB4C0065218A /* ParameterSeperatorNode.h */,
+				1A0259AA1165EB4C0065218A /* ParameterSeperatorNode.m */,
+			);
+			name = "Internal Nodes";
+			sourceTree = "<group>";
+		};
+		1A025C5D11663A360065218A /* Function Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				1A025D541166532A0065218A /* FunctionNodeFactory.h */,
+				1A025D551166532A0065218A /* FunctionNodeFactory.m */,
+				1A025C5F11663A550065218A /* FunctionNode.m */,
+				1AF28C481167797A0079E00E /* MinFunctionNode.h */,
+				1AF28C491167797A0079E00E /* MinFunctionNode.m */,
+				1AF28D96116798980079E00E /* MaxFunctionNode.h */,
+				1AF28D97116798980079E00E /* MaxFunctionNode.m */,
+			);
+			name = "Function Nodes";
+			sourceTree = "<group>";
+		};
+		1A025C91116642570065218A /* Arithmetical Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				1A025C92116642650065218A /* AdditionOperatorNode.h */,
+				1A025C93116642650065218A /* AdditionOperatorNode.m */,
+				1AF28AA2116738150079E00E /* MultiplicationOperatorNode.h */,
+				1AF28AA3116738150079E00E /* MultiplicationOperatorNode.m */,
+				1AF28ACD116739E90079E00E /* DivisionOperatorNode.h */,
+				1AF28ACE116739E90079E00E /* DivisionOperatorNode.m */,
+				1AF28AD311673AF80079E00E /* SubtractionOperatorNode.h */,
+				1AF28AD411673AF80079E00E /* SubtractionOperatorNode.m */,
+			);
+			name = "Arithmetical Nodes";
+			sourceTree = "<group>";
+		};
+		1A5212091164A983004B6D90 /* Value Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				1A5212121164A9B5004B6D90 /* ValueNode.h */,
+				1A5212131164A9B5004B6D90 /* ValueNode.m */,
+				1A5212161164AAF1004B6D90 /* VariableNode.h */,
+				1A5212171164AAF1004B6D90 /* VariableNode.m */,
+				1A52121A1164AB1C004B6D90 /* IntegerNode.h */,
+				1A52121B1164AB1C004B6D90 /* IntegerNode.m */,
+				1A52121E1164AB32004B6D90 /* DoubleNode.h */,
+				1A52121F1164AB32004B6D90 /* DoubleNode.m */,
+				1A5212221164AB4B004B6D90 /* BooleanNode.h */,
+				1A5212231164AB4B004B6D90 /* BooleanNode.m */,
+			);
+			name = "Value Nodes";
+			sourceTree = "<group>";
+		};
+		1A52125711652712004B6D90 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1A52125B11652784004B6D90 /* IntegrationTests.h */,
+				1A52125C11652784004B6D90 /* IntegrationTests.m */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		1AF28A2C116735CB0079E00E /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				1AF28D8C116797F50079E00E /* FunctionNode.h */,
+				1AF28D8D116797F50079E00E /* OperatorNode.h */,
+				1AF28A52116736DB0079E00E /* ExpressionFactory.h */,
+				1AF28A53116736DB0079E00E /* ExpressionNode.h */,
+				1AF28A2E116735DE0079E00E /* ExpressionTreeFramework.h */,
+			);
+			name = Include;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* ExpressionTreeFramework_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* ExpressionTreeFramework_Prefix.pch in Headers */,
+				1A5212141164A9B5004B6D90 /* ValueNode.h in Headers */,
+				1A5212181164AAF1004B6D90 /* VariableNode.h in Headers */,
+				1A52121C1164AB1C004B6D90 /* IntegerNode.h in Headers */,
+				1A5212201164AB32004B6D90 /* DoubleNode.h in Headers */,
+				1A5212241164AB4B004B6D90 /* BooleanNode.h in Headers */,
+				1A0259821165E45C0065218A /* EqualityOperatorNode.h in Headers */,
+				1A02599A1165E9120065218A /* ObjectComparer.h in Headers */,
+				1A0259A31165EAFE0065218A /* OpenBracketNode.h in Headers */,
+				1A0259A71165EB300065218A /* CloseBracketNode.h in Headers */,
+				1A0259AB1165EB4C0065218A /* ParameterSeperatorNode.h in Headers */,
+				1A025C4E116634210065218A /* Stack.h in Headers */,
+				1A025C94116642650065218A /* AdditionOperatorNode.h in Headers */,
+				1A025C98116643560065218A /* ObjectArithmetic.h in Headers */,
+				1A025C9C116646C50065218A /* OperatorNodeFactory.h in Headers */,
+				1A025CA0116648970065218A /* OperatorNodePair.h in Headers */,
+				1A025D561166532A0065218A /* FunctionNodeFactory.h in Headers */,
+				1AF28A2F116735DE0079E00E /* ExpressionTreeFramework.h in Headers */,
+				1AF28A54116736DB0079E00E /* ExpressionFactory.h in Headers */,
+				1AF28A55116736DB0079E00E /* ExpressionNode.h in Headers */,
+				1AF28AA4116738150079E00E /* MultiplicationOperatorNode.h in Headers */,
+				1AF28ACF116739E90079E00E /* DivisionOperatorNode.h in Headers */,
+				1AF28AD511673AF80079E00E /* SubtractionOperatorNode.h in Headers */,
+				1AF28C4A1167797A0079E00E /* MinFunctionNode.h in Headers */,
+				1AF28D8E116797F50079E00E /* FunctionNode.h in Headers */,
+				1AF28D8F116797F50079E00E /* OperatorNode.h in Headers */,
+				1AF28D98116798980079E00E /* MaxFunctionNode.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1A52124D116526CA004B6D90 /* ExpressionTreeFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A521252116526CB004B6D90 /* Build configuration list for PBXNativeTarget "ExpressionTreeFrameworkTests" */;
+			buildPhases = (
+				1A521249116526CA004B6D90 /* Resources */,
+				1A52124A116526CA004B6D90 /* Sources */,
+				1A52124B116526CA004B6D90 /* Frameworks */,
+				1A52124C116526CA004B6D90 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExpressionTreeFrameworkTests;
+			productName = ExpressionTreeFrameworkTests;
+			productReference = 1A52124E116526CA004B6D90 /* ExpressionTreeFrameworkTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		D2AAC07D0554694100DB518D /* ExpressionTreeFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "ExpressionTreeFramework" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExpressionTreeFramework;
+			productName = ExpressionTreeFramework;
+			productReference = D2AAC07E0554694100DB518D /* libExpressionTreeFramework.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "ExpressionTreeFramework" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 0867D691FE84028FC02AAC07 /* ExpressionTreeFramework */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* ExpressionTreeFramework */,
+				1A52124D116526CA004B6D90 /* ExpressionTreeFrameworkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A521249116526CA004B6D90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A52124C116526CA004B6D90 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A52124A116526CA004B6D90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A52125D11652784004B6D90 /* IntegrationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A5212061164A87C004B6D90 /* ExpressionNode.m in Sources */,
+				1A5212151164A9B5004B6D90 /* ValueNode.m in Sources */,
+				1A5212191164AAF1004B6D90 /* VariableNode.m in Sources */,
+				1A52121D1164AB1C004B6D90 /* IntegerNode.m in Sources */,
+				1A5212211164AB32004B6D90 /* DoubleNode.m in Sources */,
+				1A5212251164AB4B004B6D90 /* BooleanNode.m in Sources */,
+				1ACC2E2D1165DBF200942FA8 /* ExpressionFactory.m in Sources */,
+				1A02597A1165E3180065218A /* OperatorNode.m in Sources */,
+				1A0259831165E45C0065218A /* EqualityOperatorNode.m in Sources */,
+				1A02599B1165E9120065218A /* ObjectComparer.m in Sources */,
+				1A0259A41165EAFE0065218A /* OpenBracketNode.m in Sources */,
+				1A0259A81165EB300065218A /* CloseBracketNode.m in Sources */,
+				1A0259AC1165EB4C0065218A /* ParameterSeperatorNode.m in Sources */,
+				1A025C4F116634210065218A /* Stack.m in Sources */,
+				1A025C6111663A550065218A /* FunctionNode.m in Sources */,
+				1A025C95116642650065218A /* AdditionOperatorNode.m in Sources */,
+				1A025C99116643560065218A /* ObjectArithmetic.m in Sources */,
+				1A025C9D116646C50065218A /* OperatorNodeFactory.m in Sources */,
+				1A025CA1116648970065218A /* OperatorNodePair.m in Sources */,
+				1A025D571166532A0065218A /* FunctionNodeFactory.m in Sources */,
+				1AF28AA5116738150079E00E /* MultiplicationOperatorNode.m in Sources */,
+				1AF28AD0116739E90079E00E /* DivisionOperatorNode.m in Sources */,
+				1AF28AD611673AF80079E00E /* SubtractionOperatorNode.m in Sources */,
+				1AF28C4B1167797A0079E00E /* MinFunctionNode.m in Sources */,
+				1AF28D99116798980079E00E /* MaxFunctionNode.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1A521250116526CB004B6D90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "ExpressionTreeFrameworkTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = ExpressionTreeFrameworkTests;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		1A521251116526CB004B6D90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				INFOPLIST_FILE = "ExpressionTreeFrameworkTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = ExpressionTreeFrameworkTests;
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/ExpressionTreeFramework.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ExpressionTreeFramework_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = ExpressionTreeFramework;
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/ExpressionTreeFramework.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ExpressionTreeFramework_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = ExpressionTreeFramework;
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ./Include;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.1.3;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ./Include;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.1.3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A521252116526CB004B6D90 /* Build configuration list for PBXNativeTarget "ExpressionTreeFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A521250116526CB004B6D90 /* Debug */,
+				1A521251116526CB004B6D90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "ExpressionTreeFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "ExpressionTreeFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
