@@ -13,6 +13,6 @@
 
 }
 
-- (id)evaluate;
+- (id)evaluate:(id)context;
 
 @end

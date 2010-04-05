@@ -16,6 +16,6 @@
 @property (retain) NSNumber* value;
 
 - (id)initWithNumber:(NSNumber*)value;
-- (id)evaluate;
+- (id)evaluate:(id)context;
 
 @end

@@ -15,9 +15,9 @@
 	return [super init];
 }
 
-- (id)evaluate
+- (id)evaluate:(id)context
 {
-	return nil;
+	@throw [NSException exceptionWithName:@"ExecutionError" reason:@"Probable incorrect override of evaluate in derived node" userInfo:nil];
 }
 
 - (id)returnType

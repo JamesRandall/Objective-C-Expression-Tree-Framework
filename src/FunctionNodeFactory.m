@@ -9,6 +9,16 @@
 #import "FunctionNodeFactory.h"
 #import "MinFunctionNode.h"
 #import "MaxFunctionNode.h"
+#import "SquareFunctionNode.h"
+#import "SquareRootFunctionNode.h"
+#import "PowerFunctionNode.h"
+#import "FactorialFunctionNode.h"
+#import "SineFunctionNode.h"
+#import "CosineFunctionNode.h"
+#import "TangentFunctionNode.h"
+#import "ArcsineFunctionNode.h"
+#import "ArccosineFunctionNode.h"
+#import "ArctangentFunctionNode.h"
 
 @implementation FunctionNodeFactory
 
@@ -20,6 +30,16 @@
 		_functions = [[NSMutableDictionary alloc] init];
 		[self registerFunctionNode:@"min" type:[MinFunctionNode class]];
 		[self registerFunctionNode:@"max" type:[MaxFunctionNode class]];
+		[self registerFunctionNode:@"sqr" type:[SquareFunctionNode class]];
+		[self registerFunctionNode:@"sqrt" type:[SquareRootFunctionNode class]];
+		[self registerFunctionNode:@"pow" type:[PowerFunctionNode class]];
+		[self registerFunctionNode:@"factorial" type:[FactorialFunctionNode class]];
+		[self registerFunctionNode:@"sin" type:[SineFunctionNode class]];
+		[self registerFunctionNode:@"cos" type:[CosineFunctionNode class]];
+		[self registerFunctionNode:@"tan" type:[TangentFunctionNode class]];
+		[self registerFunctionNode:@"arctan" type:[ArctangentFunctionNode class]];
+		[self registerFunctionNode:@"arccos" type:[ArccosineFunctionNode class]];
+		[self registerFunctionNode:@"arcsin" type:[ArcsineFunctionNode class]];
 	}
 	return self;
 }

@@ -23,7 +23,7 @@
 	return self;
 }
 
-- (id)evaluate
+- (id)evaluate:(id)context
 {
 	return self.value;
 }

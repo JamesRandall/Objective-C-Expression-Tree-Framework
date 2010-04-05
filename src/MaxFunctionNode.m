@@ -32,10 +32,10 @@
 	[super dealloc];
 }
 
-- (id)evaluate
+- (id)evaluate:(id)context
 {
-	NSNumber* value1 = [self.value1 evaluate];
-	NSNumber* value2 = [self.value2 evaluate];
+	NSNumber* value1 = [self.value1 evaluate:context];
+	NSNumber* value2 = [self.value2 evaluate:context];
 	
 	NSComparisonResult comparison = [value1 compare:value2];
 	if (comparison == NSOrderedDescending)

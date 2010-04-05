@@ -11,10 +11,10 @@
 
 @implementation MultiplicationOperatorNode
 
-- (id)evaluate
+- (id)evaluate:(id)context
 {
-	id leftValue = [self.left evaluate];
-	id rightValue = [self.right evaluate];
+	id leftValue = [self.left evaluate:context];
+	id rightValue = [self.right evaluate:context];
 	
 	return [ObjectArithmetic multiplyValue:leftValue byValue:rightValue];
 }
